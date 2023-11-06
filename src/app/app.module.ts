@@ -3,14 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { HomeComponent } from './screens/home/home.component';
+import { PersonalComponent } from './screens/personal/personal.component';
+import { ContactoComponent } from './screens/contacto/contacto.component';
+import { Error404Component } from './screens/error404/error404.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ProductosComponent } from './screens/productos/productos.component';
+import { DetallesProductoComponent } from './screens/detalles-producto/detalles-producto.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    HomeComponent,
+    PersonalComponent,
+    ContactoComponent,
+    Error404Component,
+    ProductosComponent,
+    DetallesProductoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

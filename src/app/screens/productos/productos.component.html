@@ -1,0 +1,33 @@
+<div *ngFor="let item of dataProductos" class="container">
+    <h6>ID: {{item.id}}</h6>
+    <h6>Nombre: {{item.nombre}}</h6>
+    <h6>Precio: {{item.precio}}</h6>
+
+    <a href="detalles/{{item.id}}" class="btn btn-warning">Ver más Detalles</a>
+    <hr>
+</div>
+
+<hr>
+
+<form >
+    <label for="">Ingrese ID: </label>
+    <input type="text" #id>
+
+    <label for="">Ingrese producto</label>
+    <input type="text" #prod>
+
+    <label for="">Ingrese precio</label>
+    <input type="number" #precio>
+
+    <button (click)=
+    "crearProducto( id.value, prod.value, precio.value )">
+        Guardar</button>
+
+    <input type="submit" value="Editar" (click)=
+    "actualizarProducto( id.value, prod.value, precio.value )"
+    >
+
+    <button (click)="eliminarProducto(id.value)">
+        Eliminar</button>
+    
+</form>

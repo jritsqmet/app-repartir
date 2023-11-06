@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let item of dataPersonal">
+        <div class="thumbnail">
+            <a href="{{ item.images.main }}">
+                <img src="{{ item.images.main }}" alt="Lights" class="personal">
+
+            </a>
+            <div class="caption">
+                <p>Nombre: {{ item.name.first }} {{ item.name.last}}</p>
+                <p>Ocupación: {{ item.occupation}}</p>
+            </div>
+        </div>
+    </div>
+</div>
