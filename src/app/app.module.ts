@@ -14,6 +14,7 @@ import { ProductosComponent } from './screens/productos/productos.component';
 import { DetallesProductoComponent } from './screens/detalles-producto/detalles-producto.component'
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
