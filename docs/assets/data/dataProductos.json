@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "id": 101,
+      "nombre": "Mouse",
+      "precio": 20
+    },
+    {
+      "id": 102,
+      "nombre": "Teclado",
+      "precio": 40
+    },
+    {
+      "id": 103,
+      "nombre": "Monitor",
+      "precio": 340
+    },
+    {
+      "id": 104,
+      "nombre": "Batería",
+      "precio": 15
+    },
+    {
+      "id": 106,
+      "nombre": "Tablet",
+      "precio": 250
+    },
+    {
+      "id": 1003,
+      "nombre": "Auriculares",
+      "precio": "23"
+    }
+  ]
+}
