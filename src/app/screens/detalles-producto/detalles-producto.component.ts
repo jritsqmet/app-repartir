@@ -20,22 +20,14 @@ export class DetallesProductoComponent {
       this.dataProductos = prod;
 
       this.ruta.params.subscribe( parametro =>{
-      
         const id= +parametro['id']  
-
            
         for ( let item of this.dataProductos){
           if(item.id === id)
             this.producto = item
         }
-        
       })
-
     })
-
-    
-
-
   }
 
 }

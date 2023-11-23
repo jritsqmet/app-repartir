@@ -9,25 +9,21 @@
 
 <hr>
 
-<form >
-    <label for="">Ingrese ID: </label>
-    <input type="text" #id>
 
-    <label for="">Ingrese producto</label>
-    <input type="text" #prod>
+<hr><hr>
 
-    <label for="">Ingrese precio</label>
-    <input type="number" #precio>
+<form (ngSubmit)="capturar(form)" #form="ngForm">
+    <label for="id">Ingrese ID: </label>
+    <input type="text" id="id" name="id" [(ngModel)]="id">
 
-    <button (click)=
-    "crearProducto( id.value, prod.value, precio.value )">
-        Guardar</button>
+    <label for="producto">Ingrese producto</label>
+    <input type="text" id="producto" name="producto" [(ngModel)]="producto" >
 
-    <input type="submit" value="Editar" (click)=
-    "actualizarProducto( id.value, prod.value, precio.value )"
-    >
+    <label for="precio">Ingrese precio</label>
+    <input type="text" id="precio" name="precio" [(ngModel)]="precio" >
 
-    <button (click)="eliminarProducto(id.value)">
-        Eliminar</button>
+    <button type="submit">  Enviar</button>
+
+
     
 </form>
